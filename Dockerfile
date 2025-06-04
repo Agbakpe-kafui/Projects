@@ -8,7 +8,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && \
     apt-get install -y python3 python3-pip python3-venv htop && \
     apt-get clean && \
-    rm -rf /var/lib/apt/lists/*
+    #rm -rf /var/lib/apt/lists/*
 
 # Set python3 as default python
 RUN update-alternatives --install /usr/bin/python python /usr/bin/python3 1

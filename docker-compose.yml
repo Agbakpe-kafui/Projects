@@ -1,6 +1,5 @@
-
 services:
-  python:
+  projects:
     build: .
     volumes:
       - ./:/app
